@@ -25,7 +25,7 @@ h2{
 .container .fila{
     display: flex;
     justify-content: space-between;
-    text-align: center;
+    text-align: relative;
     margin: 10px 0;
 }
 .container .fila .palabra{
@@ -70,8 +70,8 @@ button{
     100%{transform: scale(1);}
 }
 .niveles{
-    background-color: #0e0d12;
-    position: absolute;
+    background-color: #0d120e;
+    position:relative;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -80,11 +80,10 @@ button{
     padding: 10px 0;
 }
 .nivel{
-    background-color: #353444;
+    background-color: #5b5959;
     width: 80px;
     height: 80px;
     margin: 20px;
-    position: relative;
     border-radius: 20px;
     transition: .6s;
     display: flex;
@@ -101,3 +100,44 @@ color: #000;
 .completado i{
     color: #fff !important;
 }
+/* Estilos para pantallas grandes */
+@media only screen and (max-width: 1220px){
+.container{
+    max-width: 1200px;
+    }
+    .niveles{
+        max-width: 1200px;
+    }
+}
+
+/* Estilos para pantallas medianas */
+@media only screen and (max-width: 992px){
+    .container{
+        max-width: 960px;
+    }
+    .niveles{
+        max-width: 960px;
+    }
+}
+
+/* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+    .niveles{
+        max-width: 720px;
+    }
+}
+
+/* Estilos para pantallas extra pequeñas */
+@media only screen and (max-width: 576px){
+    .container{
+        max-width: 540px;
+    }
+    .niveles{
+        max-width: 540px;
+    }
+}
+
+  
